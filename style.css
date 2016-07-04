@@ -1,0 +1,48 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Page layout */
+html {
+  height: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: ghostwhite;
+}
+body {
+  min-height: 100%;
+  background-color: white;
+  padding: 1em;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+}
+
+/* Our views */
+#container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.instaweather {
+  margin: 1em;
+  width: 256px;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  font-weight: bold;
+}
+.instaweather img {
+  width: 256px;
+  height: 256px;
+}
+h1 {
+  margin: 0;
+  text-align: center;
+}
+h2 {
+  width: 100%;
+  text-align: center;
+}
